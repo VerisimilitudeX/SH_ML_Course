@@ -1,0 +1,110 @@
+Q1 Linear Regression
+1 Point
+Grading comment:
+For all multiple choice, choose the option that best applies:
+
+In linear regression, consider input matrix X, if the size of one dimension is equal to the number of samples, what is the size of the other dimension?
+
+
+Choice 1 of 4:number of inputs
+
+Choice 2 of 4:number of features
+
+Choice 3 of 4:number of parameters
+
+Choice 4 of 4:number of outputs
+
+Q4 Model Selection
+4 Points
+Grading comment:
+Five different linear regression models are trained and evaluated but with different sets of features; each one is labeled M1 through M5. Assume the training set, validation set, and test set are the same for each model.
+
+Model	Train Error	Validation Error	Test Error
+M1	0.12	0.25	0.22
+M2	0.08	0.30	0.35
+M3	0.11	0.14	0.09
+M4	0.14	0.10	0.12
+M5	0.20	0.18	0.19
+
+Q5.12 Points
+Grading comment:
+What is another way of describing a model with high variance?
+
+
+Choice 1 of 4:High bias
+
+Choice 2 of 4:Overfitting
+
+Choice 3 of 4:Underfitting
+
+Choice 4 of 4:Low train set performance
+
+Q5.22 Points
+Grading comment:
+For a model with high bias, we would expect to see low train set error but high test set error.
+
+
+Choice 1 of 2:True
+
+Choice 2 of 2:False
+
+Q5.32 Points
+Grading comment:
+What is one technique to reduce variance?
+
+
+Choice 1 of 4:Add more features
+
+Choice 2 of 4:Regularization (ex, L1 or L2)
+
+Choice 3 of 4:Train for longer
+
+Choice 4 of 4:Evaluate on more data
+Q66 Points
+Q6.1 Training Procedures
+3 Points
+Grading comment:
+Concisely (
+≤
+3
+≤3 sentences) explain why it is important to not train on values in the test set.
+
+Q6.23 Points
+Grading comment:
+Imagine you are training multiple models with different complexities and choosing the best one. Explain why you would use a validation set to choose the best model, rather than the train or test set.
+
+
+Q7 ML Practitioner Scenarios
+20 Points
+Grading comment:
+Consider the below scenarios, and determine whether the practices are "Correct" or "Incorrect". If "Incorrect," please explain why.
+
+NOTE: Please explicitly write "Correct" or "Incorrect." If "Correct," an explanation is not necessary.
+
+Q7.14 Points
+Grading comment:
+Tanmay has a housing price dataset of 1 million examples. The dataset is ordered by the different sources the data came from (ex, different cities). He uses the first 80% of the dataset as the train set.
+
+
+Grading comment:
+After training a regression model using 50 features (columns in a dataset) and seeing a training Mean Squared Error of 100, Josh evaluates it on a different dataset containing unseen data and gets an error of 50,000. To improve his model, he decides to use a more complicated model.
+
+
+Q7.34 Points
+Grading comment:
+Karman, a data scientist, is training a model to predict a person's height (output) based on their gene expression (input features). Based on this analysis, he will be able to tell which genes control a person's height.
+
+Correct.
+Q7.44 Points
+Grading comment:
+Wuwei wants to get a more robust measure of her model's performance, so she decides to use k-fold cross-validation with 
+k
+=
+5
+k=5.
+
+Q7.54 Points
+Grading comment:
+Max is creating a model to predict housing prices, using the dataset in HW0 programming and the features in advanced_features. However, Max is aware that historic redlining practices in the US have resulted in houses in certain neighborhoods being valued lower than similar houses in other neighborhoods, often based on the racial makeup of the neighborhood. Max assumes that by removing the zipcode feature from his model, it can no longer learn associations that encode this geography-based historical bias.
+
+HINT: Review each feature in advanced_features.
