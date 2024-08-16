@@ -1,0 +1,1 @@
+These files contain course projects that I have designed for a Schoolhouse.world course that I am teaching for free (not getting paid in money or volunteer hours). Each file contains instructions on how to use each block of jupyter notebook code.
